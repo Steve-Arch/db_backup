@@ -8,7 +8,7 @@
 
 error_detected(){
         # Used to send an email should the script detect an error dumping DB's or generating grants
-        /usr/sbin/sendmail technical@hostinguk.net </root/smtp/error.txt
+        /usr/sbin/sendmail technical@blahblah.net </root/smtp/error.txt
 }
 
 BACKUP_DIR="/backup/dumps"
