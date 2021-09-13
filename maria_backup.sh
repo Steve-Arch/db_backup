@@ -27,7 +27,7 @@ fi
 
 echo -e "\n========== OPENING LOG FILE ${TIMESTAMP}: $(date +%R) ==========\n" >> $LOG_FILE
 
-for DATABASE in $(mysql -uroot -pPASSWORD -e 'show databases;' -s --skip-column-names | grep -Ev "information_schema|performance_schema"); do
+for DATABASE in $(mysql -uroot -p{PASSWORD} -e 'show databases;' -s --skip-column-names | grep -Ev "information_schema|performance_schema"); do
 
         echo -e "${TIMESTAMP}: $(date +%R)\t${DATABASE}: Processing" >> $LOG_FILE
 
